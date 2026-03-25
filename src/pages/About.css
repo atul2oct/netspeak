@@ -1,0 +1,263 @@
+/* ========= PAGE HERO (shared) ========= */
+.page-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  background: var(--dark);
+  overflow: hidden;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.page-hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.page-hero-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.1);
+  top: -200px;
+  right: -100px;
+  filter: blur(80px);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero-title {
+  font-size: 3.5rem;
+  color: var(--white);
+  margin-bottom: 20px;
+  max-width: 700px;
+}
+
+.page-hero-desc {
+  font-size: 1.2rem;
+  color: var(--gray-400);
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+/* ========= ABOUT CONTENT ========= */
+.about-content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--gray-600);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.about-capabilities {
+  background: var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+
+.about-capabilities h3 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  color: var(--dark);
+}
+
+.capabilities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.capability-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--gray-800);
+}
+
+.capability-check {
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+/* ========= ABOUT DETAIL ========= */
+.about-detail-section {
+  background: var(--gray-100);
+}
+
+.about-detail-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-detail-content p {
+  color: var(--gray-600);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 24px;
+}
+
+/* ========= VMA CARDS ========= */
+.vma-section {
+  background: var(--white);
+}
+
+.vma-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.vma-card {
+  padding: 48px 36px;
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.vma-aim {
+  background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+  color: var(--white);
+}
+
+.vma-vision {
+  background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+  color: var(--white);
+}
+
+.vma-mission {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: var(--white);
+}
+
+.vma-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.vma-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.vma-card p {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* ========= TIMELINE ========= */
+.timeline-section {
+  background: var(--gradient-dark);
+}
+
+.timeline-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.timeline-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.timeline-card:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-6px);
+}
+
+.timeline-year {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.timeline-card p {
+  color: var(--gray-400);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ========= ABOUT CTA ========= */
+.about-cta {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.about-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.about-cta p {
+  color: var(--gray-600);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 140px 0 60px;
+  }
+
+  .page-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .about-content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .vma-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
